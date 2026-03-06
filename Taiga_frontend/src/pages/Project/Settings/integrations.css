@@ -1,0 +1,74 @@
+.integration-page h2 {
+  color: #0097a7;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
+}
+
+.payload-row {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: #7fead3;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.help-link {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #0097a7;
+}
+
+/* Webhooks */
+.webhooks-table {
+  border-top: 1px solid #e0e0e0;
+}
+
+.webhooks-header,
+.webhooks-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr auto auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.webhooks-header {
+  font-size: 13px;
+  color: #777;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-btn.success {
+  color: #2ecc71;
+}
+
+.icon-btn.danger {
+  color: #e74c3c;
+}

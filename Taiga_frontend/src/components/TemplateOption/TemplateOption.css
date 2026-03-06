@@ -1,0 +1,54 @@
+.template-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e6eaef;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.template-option:hover {
+  background: #f7fafa;
+}
+
+.template-option__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.template-option__icon {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #2e3440;
+  border-radius: 4px;
+}
+
+/* Title */
+.template-option h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2e3440;
+}
+
+/* Description */
+.template-option p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #6b778c;
+}
+
+/* Help icon */
+.template-option__help {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #c1c7d0;
+  font-size: 12px;
+  color: #6b778c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

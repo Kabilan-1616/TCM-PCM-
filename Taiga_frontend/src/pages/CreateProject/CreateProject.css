@@ -1,0 +1,27 @@
+.create-project {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.create-project h1 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #00a0b0;
+  margin-bottom: 8px;
+}
+
+.create-project .subtitle {
+  font-size: 14px;
+  color: #6b778c;
+  margin-bottom: 32px;
+}
+
+.template-list {
+  border-top: 1px solid #e6eaef;
+  text-align: left;
+}
+
+/* Each template row is handled inside TemplateOption.css,
+   but spacing consistency is controlled here */

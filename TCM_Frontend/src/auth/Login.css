@@ -1,0 +1,123 @@
+/* ================= LOGIN PAGE WRAPPER ================= */
+
+.auth-page {
+  min-height: 100vh;
+  background: #111827;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= TOP BAR ================= */
+
+.auth-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.auth-logo-box {
+  width: 32px;
+  height: 32px;
+  background-color: #6366f1;
+  border-radius: 50%;
+}
+
+.auth-brand-text {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  color: #f3f4f6;
+}
+
+/* ================= CENTER LOGIN ================= */
+
+.auth-login-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= LOGIN CARD ================= */
+
+.auth-login-card {
+  width: 340px;
+  padding: 30px;
+  background: #1f2937;
+  border-radius: 14px;
+  border: 1px solid #374151;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.auth-title {
+  margin-bottom: 25px;
+  color: #f3f4f6;
+  font-weight: 600;
+}
+
+/* ================= FORM ================= */
+
+.auth-login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #d7dff3;
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.25);
+}
+
+/* ================= BUTTON ================= */
+
+.auth-button {
+  background: #6366f1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.auth-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99,102,241,0.35);
+}
+
+/* ================= LINKS ================= */
+
+.auth-link {
+  color: #9ca3af;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-link:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}

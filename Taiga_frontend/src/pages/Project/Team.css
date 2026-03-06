@@ -1,0 +1,93 @@
+.team {
+  padding: 24px;
+}
+
+.team__title {
+  margin-bottom: 16px;
+}
+
+/* LAYOUT */
+.team__layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+}
+
+/* FILTERS */
+.team__filters {
+  border-right: 1px solid #e6eaef;
+  padding-right: 16px;
+}
+
+.team__search {
+  width: 100%;
+  padding: 8px;
+  margin: 12px 0;
+  border: 1px solid #dfe1e6;
+}
+
+.team__roles .role {
+  padding: 8px 0;
+  cursor: pointer;
+  color: #6b778c;
+}
+
+.team__roles .active {
+  font-weight: 600;
+  color: #00a0b0;
+}
+
+/* LIST */
+.team__list {
+  width: 100%;
+}
+
+.team__row {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr) 1fr;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e6eaef;
+}
+
+.team__row--header {
+  font-size: 12px;
+  color: #6b778c;
+  font-weight: 600;
+}
+
+/* MEMBER */
+.member {
+  display: flex;
+  gap: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #f0f3f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.role-text {
+  font-size: 13px;
+  color: #6b778c;
+}
+
+.leave {
+  font-size: 12px;
+  color: red;
+  cursor: pointer;
+}
+
+/* ICONS */
+.icon {
+  text-align: center;
+}
+
+.icon.disabled {
+  opacity: 0.3;
+}

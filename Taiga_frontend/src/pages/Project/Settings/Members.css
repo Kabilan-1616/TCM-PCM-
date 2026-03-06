@@ -1,0 +1,122 @@
+.members__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.members__table {
+  border-top: 1px solid #e5e7eb;
+}
+
+.members__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr auto;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 12px;
+}
+
+.members__row.header {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b778c;
+}
+
+.member {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: #e0a3a3;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status.active {
+  background: #e6fcf5;
+  color: #00bfa5;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.status.pending {
+  background: #fff0e6;
+  color: #ff5630;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.member-role {
+  font-size: 14px;
+  color: #2e3440;
+  font-weight: 500;
+}
+
+.members__empty {
+  padding: 40px;
+  text-align: center;
+  color: #6b778c;
+  font-size: 14px;
+}
+
+.member-delete-btn {
+  background: transparent;
+  border: 1px solid #e53e3e;
+  color: #e53e3e;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 32px;
+}
+
+.member-delete-btn:hover:not(:disabled) {
+  background: #e53e3e;
+  color: white;
+  border-color: #c53030;
+}
+
+.member-delete-btn:active:not(:disabled) {
+  background: #c53030;
+  border-color: #c53030;
+  transform: scale(0.98);
+}
+
+.member-delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  background: transparent;
+  border-color: #e53e3e;
+  color: #e53e3e;
+}
+
+.delete-spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(229, 62, 62, 0.3);
+  border-top-color: #e53e3e;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

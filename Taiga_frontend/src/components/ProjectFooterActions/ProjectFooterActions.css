@@ -1,0 +1,25 @@
+.project-footer {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.project-footer .back-btn {
+  flex: 1;
+  background: #dfe3eb;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.project-footer .create-btn {
+  flex: 2;
+  background: #7ff0df;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}

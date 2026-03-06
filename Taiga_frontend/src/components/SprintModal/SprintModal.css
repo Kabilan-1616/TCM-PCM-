@@ -1,0 +1,113 @@
+/* Overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main modal box */
+.modal.sprint-modal {
+  position: relative;
+  background: #ffffff;
+  width: 520px;
+  padding: 36px 40px 32px;
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Close button (top right X) */
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Heading */
+.sprint-modal h2 {
+  margin: 0 0 22px 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+/* Text input (Sprint name) */
+.sprint-modal input[type="text"],
+.sprint-modal input:not([type]) {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 18px;
+  transition: border 0.2s;
+}
+
+.sprint-modal input:focus {
+  border-color: #00bfa5;
+}
+
+/* Date inputs row */
+.date-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.date-row input[type="date"] {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.date-row input[type="date"]:focus {
+  border-color: #00bfa5;
+}
+
+/* Save button */
+.primary-btn {
+  background-color: #2ec4b6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: #25a79a;
+}
+
+/* Subtle modal entry animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

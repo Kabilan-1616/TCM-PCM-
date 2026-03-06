@@ -1,0 +1,18 @@
+.skeleton-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.skeleton-avatar {
+  width: 32px;
+  height: 32px;
+  background: #dfe1e6;
+}
+
+.skeleton-lines div {
+  height: 10px;
+  background: #ebecf0;
+  margin-bottom: 6px;
+  width: 160px;
+}

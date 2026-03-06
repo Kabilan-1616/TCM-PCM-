@@ -1,0 +1,54 @@
+Frontend:
+
+#denpendencies 
+npm install
+
+npm install react-router-dom axios
+
+#To Run
+npm run dev
+
+--------------------------------------------------------------------------------------------------------------
+
+Backend:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+#denpendencies 
+pip install -r requirements.txt
+pip install fastapi uvicorn sqlalchemy passlib[bcrypt] pydantic bcrypt==4.0.1 "pydantic[email]"
+
+#To Run
+python -m venv venv
+
+venv\Scripts\activate  
+
+uvicorn main:app --reload
+
+-------------------------------------------------------------------------------------------------------------
+IF DATABASE deleted for admin login use the below in main.py run it ones , and on fastapi-docs exectue it 
+manually , therefore ADMIN user is created(called bootstrap method):
+
+@app.post("/bootstrap-admin")
+def bootstrap_admin(db: Session = Depends(get_db)):
+    admin = db.query(models.User).filter(
+        models.User.role == "admin"
+    ).first()
+
+    if admin:
+        raise HTTPException(status_code=400, detail="Admin already exists")
+
+    admin_user = models.User(
+        email="admin@testlink.com",
+        employee_id=9999,
+        name="System Admin",
+        password=hash_password("Admin@123"),
+        role="admin",
+        is_active=True
+    )
+
+    db.add(admin_user)
+    db.commit()
+    db.refresh(admin_user)
+
+    return {"message": "Admin created in active DB"}

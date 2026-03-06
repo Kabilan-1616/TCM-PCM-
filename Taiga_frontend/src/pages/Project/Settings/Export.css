@@ -1,0 +1,54 @@
+.export {
+  max-width: 720px;
+}
+
+/* TITLE */
+.export h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #172b4d;
+  margin-bottom: 8px;
+}
+
+/* DESCRIPTION */
+.export__desc {
+  font-size: 14px;
+  color: #6b778c;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.export__btn {
+  background: #00bfa5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.export__btn:hover {
+  background: #00a894;
+}
+
+/* HELP TEXT */
+.export__help {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #6b778c;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.export__help a {
+  color: #00a0b0;
+  text-decoration: none;
+}
+
+.export__help a:hover {
+  text-decoration: underline;
+}

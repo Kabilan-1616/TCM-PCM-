@@ -1,0 +1,21 @@
+.visibility-toggle {
+  display: flex;
+  margin: 24px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.visibility-toggle__btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  background: #f4f5f7;
+  color: #4c566a;
+}
+
+.visibility-toggle__btn.active {
+  background: #008aa8;
+  color: #ffffff;
+}

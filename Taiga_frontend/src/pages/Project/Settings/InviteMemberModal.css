@@ -1,0 +1,31 @@
+.invite-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invite-modal {
+  width: 600px;
+  background: white;
+  padding: 32px;
+  position: relative;
+}
+
+.invite-modal input,
+.invite-modal select,
+.invite-modal textarea {
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+}
+
+.invite-btn {
+  width: 100%;
+  background: #7ff1df;
+  padding: 12px;
+  border: none;
+  font-weight: 600;
+}

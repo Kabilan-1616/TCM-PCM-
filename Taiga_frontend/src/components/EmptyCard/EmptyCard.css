@@ -1,0 +1,16 @@
+.empty-card {
+  text-align: center;
+}
+
+.empty-card p {
+  margin-bottom: 16px;
+  color: #4c566a;
+}
+
+.empty-card button {
+  padding: 10px 16px;
+  background: #7ff0df;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

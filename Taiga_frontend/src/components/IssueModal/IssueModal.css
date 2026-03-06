@@ -1,0 +1,213 @@
+/* ===== OVERLAY ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  z-index: 1000;
+}
+
+/* ===== MODAL ===== */
+.modal {
+  width: 900px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* CLOSE */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* TITLE */
+.modal h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* GRID */
+.issue-grid {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 32px;
+}
+
+/* LEFT */
+.issue-left .tags {
+  color: #00a0b0;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00a0b0;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 160px;
+  padding: 12px;
+  border: 1px solid #dfe1e6;
+  resize: none;
+}
+
+/* ATTACHMENTS */
+.issue-attachments {
+  margin-top: 16px;
+}
+
+.issue-attachments-header {
+  background: #f4f5f7;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.issue-attachments-header button {
+  background: #7ff0df;
+  border: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.issue-dropzone {
+  border: 1px dashed #dfe1e6;
+  padding: 14px;
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* CREATE */
+.create-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: #7ff0df;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.issue-assign {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.issue-avatar {
+  width: 36px;
+  height: 36px;
+  background: #e6eaef;
+  border-radius: 4px;
+}
+
+/* META */
+.issue-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.issue-meta-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  position: relative; /* anchor dropdown */
+  padding: 6px 0;
+}
+
+.meta-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2e3440;
+}
+
+.meta-value.clickable:hover {
+  color: #00a0b0;
+}
+
+/* ICONS */
+.issue-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.issue-icons button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #f4f5f7;
+  cursor: pointer;
+}
+
+/* DOTS */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* TYPE */
+.dot.bug { background: #e5533d; }
+.dot.question { background: #4c9aff; }
+.dot.enhancement { background: #00c4cc; }
+
+/* SEVERITY */
+.dot.wishlist { background: #c1c7d0; }
+.dot.minor { background: #5dade2; }
+.dot.normal { background: #36b37e; }
+.dot.important { background: #ffab00; }
+.dot.critical { background: #de350b; }
+
+/* PRIORITY */
+.dot.prio-low { background: #7bed9f; }
+.dot.prio-normal { background: #ffab00; }
+.dot.prio-high { background: #de350b; }
+
+
+.meta-menu {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 160px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+  padding: 4px 0;
+}
+
+.meta-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #2e3440;
+}
+
+.meta-option:hover {
+  background: #f4f5f7;
+}

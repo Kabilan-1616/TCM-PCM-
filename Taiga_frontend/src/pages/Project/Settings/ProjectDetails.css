@@ -1,0 +1,165 @@
+/* src/pages/Settings/ProjectDetails.css */
+
+.project-details h2 {
+  margin-bottom: 24px;
+}
+
+.project-details__layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+
+/* LEFT */
+.project-details__logo {
+  text-align: center;
+}
+
+.logo-box {
+  width: 160px;
+  height: 160px;
+  background: #e0a3a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  color: #6b778c;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dfe1e6;
+  border-radius: 4px;
+}
+
+.owner {
+  margin: 16px 0;
+}
+
+.owner-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: #e0a3a3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.visibility {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+/* BUTTONS */
+.primary-btn {
+  background: #00bfa5;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.secondary-btn {
+  background: #e9edf3;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #00a0b0;
+  cursor: pointer;
+}
+
+.save-btn {
+  margin-top: 16px;
+  background: #00bfa5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.danger-link {
+  margin-top: 12px;
+  background: none;
+  border: none;
+  color: #de350b;
+  cursor: pointer;
+}
+
+
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+/* Layout */
+.project-details__layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 48px;
+}
+
+/* Logo */
+.logo-box {
+  width: 180px;
+  height: 180px;
+  background: #e0a3a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Toggles */
+.toggle-row {
+  font-size: 14px;
+}
+
+/* Buttons */
+.visibility button {
+  min-width: 140px;
+}
+
+.danger-link {
+  display: block;
+  margin-top: 16px;
+}

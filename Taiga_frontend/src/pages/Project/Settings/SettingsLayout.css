@@ -1,0 +1,71 @@
+/* ===== LAYOUT ===== */
+.settings {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: calc(100vh - 56px);
+  background: #f4f5f7;
+}
+
+/* ===== LEFT NAV ===== */
+.settings__nav {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  background: #eef1f5;
+  border-right: 1px solid #dfe1e6;
+}
+
+/* ===== GROUP COLUMN ===== */
+.settings__groups {
+  padding: 16px 0;
+  border-right: 1px solid #dfe1e6;
+}
+
+.settings__group {
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #42526e;
+  cursor: pointer;
+  user-select: none;
+}
+
+.settings__group:hover {
+  background: #e4e9f0;
+}
+
+.settings__group.active {
+  background: #ffffff;
+  color: #0052cc;
+}
+
+/* ===== ITEMS COLUMN ===== */
+.settings__items {
+  padding: 16px 0;
+  background: #f7f8fa;
+}
+
+.settings__item {
+  display: block;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #172b4d;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.settings__item:hover {
+  background: #e4e9f0;
+}
+
+.settings__item.active {
+  background: #ffffff;
+  font-weight: 600;
+  color: #0052cc;
+}
+
+/* ===== RIGHT CONTENT ===== */
+.settings__content {
+  background: #ffffff;
+  padding: 32px 40px;
+  overflow-y: auto;
+}

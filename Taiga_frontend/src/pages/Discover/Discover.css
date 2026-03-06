@@ -1,0 +1,18 @@
+.discover {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.discover__title {
+  font-size: 32px;
+  font-weight: 400;
+  color: #00a0b0;
+  margin-bottom: 24px;
+}
+
+.discover__content {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
+}

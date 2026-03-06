@@ -1,0 +1,11 @@
+.empty-card {
+  width: 360px;
+  height: 160px;
+  border: 2px dashed #d3dce6;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #7a869a;
+}

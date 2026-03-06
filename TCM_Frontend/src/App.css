@@ -1,0 +1,49 @@
+/* src/App.css */
+
+/* 1. Global Reset - Essential */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden; /* Prevents the whole browser window from scrolling */
+}
+
+/* 2. The Main Container (Vertical Column) */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Stack Navbar on Top, Body Below */
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+/* 3. The Body Container (Horizontal Row) */
+.app-body {
+  display: flex;          /* Sidebar Left | Content Right */
+  flex: 1;                /* Fill all remaining height below Navbar */
+  overflow: hidden;       /* Crucial to stop double scrollbars */
+  position: relative;
+}
+
+/* 4. The Right Panel Wrapper (Vertical Column) */
+.right-panel-wrapper {
+  flex: 1;                /* Take all width next to Sidebar */
+  display: flex;
+  flex-direction: column; /* Stack Navigator on Top, Page Content Below */
+  height: 100%;
+  overflow: hidden;
+  min-width: 0;           /* Prevents flexbox overflow issues */
+}
+
+/* 5. The Scrollable Page Area */
+.app-content-scrollable {
+  flex: 1;                /* Fill remaining height below Navigator */
+  overflow-y: auto;       /* ✅ ENABLE SCROLLING HERE ONLY */
+  overflow-x: hidden;
+  position: relative;
+  
+  /* No padding here, let individual pages handle their padding */
+}

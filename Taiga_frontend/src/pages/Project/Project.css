@@ -1,0 +1,11 @@
+.project-layout {
+  display: flex;
+  height: calc(100vh - 56px);
+}
+
+.project-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background: #f7f9fb;
+}

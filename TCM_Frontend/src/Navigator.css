@@ -1,0 +1,170 @@
+/* ================= NAVIGATOR CONTAINER ================= */
+.navigator-container {
+  width: 100%;
+  height: 85px; /* ✅ FIXED HEIGHT: Prevents jumping across pages */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0; /* Grey separator line at the bottom */
+  
+  /* Vertical Layout: Title Top, Links Bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Anchors content to the bottom */
+  
+  padding: 0 24px; 
+  gap: 10px;       
+  
+  flex-shrink: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: visible; /* Changed to visible so dropdowns/shadows aren't cut off */
+}
+
+/* ================= LINE 1: PROJECT TITLE ================= */
+.nav-project-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px; 
+}
+
+.nav-folder-icon {
+  font-size: 1.1rem;
+  color: #fbbf24; /* Yellow */
+}
+
+.nav-project-name {
+  font-size: 1rem;
+  font-weight: 700; 
+  color: #163860; 
+  white-space: nowrap;
+}
+
+/* ================= LINE 2: NAV LINKS & ACTION ================= */
+.nav-links-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 40px; /* Slight increase to fit buttons comfortably */
+  /* Border removed here as it's handled by the container */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  height: 100%; 
+  align-items: flex-end; /* Aligns tab text to the bottom */
+}
+
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  color: #163860; 
+  font-size: 0.9rem; 
+  font-weight: 600;
+  padding-bottom: 12px; /* Space for the active underline */
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+/* Hover & Active States */
+.nav-item:hover { color: #0088CF; }
+.nav-item.active { color: #0088CF; font-weight: 700; }
+
+/* The Active Blue Line */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0%;
+  height: 3px; 
+  background-color: #0088CF; 
+  transition: width 0.2s ease-in-out;
+  border-radius: 3px 3px 0 0;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.nav-item.disabled {
+  color: #cbd5e1;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ================= RIGHT SIDE ACTIONS (Search & Button) ================= */
+.nav-right-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  padding-bottom: 6px; /* Lifts the inputs slightly to align with tab text */
+}
+
+/* SEARCH INPUT - With Icon on the Right */
+.nav-search-input {
+  height: 32px; 
+  width: 240px; /* Fixed width */
+  
+  /* Padding: Top, Right(Space for Icon), Bottom, Left */
+  padding: 0 32px 0 12px; 
+  
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  
+  font-size: 0.85rem;
+  color: #334155;
+  outline: none;
+  background-color: white;
+  
+  /* SEARCH ICON (SVG) - Positioned Right */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center; /* 8px from the right edge */
+  background-size: 16px;
+  
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-search-input:focus {
+  border-color: #94a3b8 !important;
+}
+
+.nav-search-input::placeholder {
+  color: #94a3b8;
+}
+
+/* CREATE BUTTON */
+.nav-action-btn {
+  height: 32px; 
+  background-color: #0088CF;
+  color: white;
+  border: none;
+  padding: 0 16px; 
+  border-radius: 4px;
+  
+  font-size: 0.85rem;
+  font-weight: 700; 
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  
+  transition: background-color 0.2s ease;
+  margin: 0; 
+}
+
+.nav-action-btn:hover {
+  background-color: #0076b5;
+}

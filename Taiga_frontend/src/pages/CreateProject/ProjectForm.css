@@ -1,0 +1,105 @@
+.project-form {
+  max-width: 640px;
+  margin: 40px auto 80px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* Title (Scrum / Kanban / Duplicate / Import) */
+.project-form h1 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #00a0b0;
+  margin-bottom: 8px;
+}
+
+/* Subtitle under title */
+.project-form .subtitle {
+  font-size: 14px;
+  color: #6b778c;
+  margin-bottom: 32px;
+}
+
+/* Section label */
+.project-form label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #4c566a;
+  margin-bottom: 8px;
+}
+
+/* Inputs & textarea */
+.project-form input,
+.project-form textarea,
+.project-form select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #dfe1e6;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.project-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Focus state (important polish) */
+.project-form input:focus,
+.project-form textarea:focus,
+.project-form select:focus {
+  border-color: #00a0b0;
+}
+
+/* Import card (Import page only) */
+.import-card {
+  border: 1px solid #e6eaef;
+  padding: 16px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.import-card strong {
+  display: block;
+  font-size: 14px;
+  color: #2e3440;
+}
+
+.import-card p {
+  font-size: 13px;
+  color: #6b778c;
+  margin-top: 4px;
+}
+
+/* Footer buttons container (used via component) */
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* Back button */
+.project-footer .back-btn {
+  flex: 1;
+  background: #dfe3eb;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Create project button */
+.project-footer .create-btn {
+  flex: 2;
+  background: #7ff0df;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}

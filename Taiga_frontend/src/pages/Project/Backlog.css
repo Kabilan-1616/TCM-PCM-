@@ -1,0 +1,426 @@
+/* src/pages/Project/Backlog.css */
+
+.backlog {
+  padding: 24px 32px;
+  font-size: 14px;
+  color: #2e3440;
+}
+
+/* ===== HEADER ===== */
+.backlog__header h2 {
+  margin-bottom: 12px;
+}
+
+.backlog__stats {
+  background: #4c566a;
+  color: #fff;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.progress-box {
+  width: 120px;
+  height: 28px;
+  background: #fff;
+}
+
+.stats-text {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.percent {
+  color: #7ff0df;
+  font-weight: 600;
+}
+
+/* ===== TOP SECTION ===== */
+.backlog__top {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.graph-hint {
+  background: #f7f9fb;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.bars {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(#00a0b0, #7ff0df);
+}
+
+.link {
+  color: #00a0b0;
+  cursor: pointer;
+}
+
+.sprints h4 {
+  margin-bottom: 8px;
+}
+
+.empty-text {
+  color: #6b778c;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #00a0b0;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ===== BACKLOG LIST ===== */
+.backlog__list {
+  margin-top: 24px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.muted {
+  color: #6b778c;
+  font-size: 13px;
+}
+
+.list-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.primary-btn {
+  background: #7ff0df;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.icon-btn {
+  background: #e6eaef;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.list-toolbar {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.filter-btn {
+  background: #e6eaef;
+  border: none;
+  padding: 6px 10px;
+}
+
+.list-toolbar input {
+  padding: 6px 10px;
+  border: 1px solid #dfe1e6;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+  text-align: center;
+  margin: 64px 0;
+}
+
+
+/* ===== STORY LIST ===== */
+.story-list {
+  margin-top: 16px;
+  border-top: 1px solid #e6eaef;
+}
+
+
+.story-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 12px;
+  border-bottom: 1px solid #e6eaef;
+  background: #fff;
+  font-size: 14px;
+}
+
+.story-row:hover {
+  background: #f7f9fb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* LEFT SIDE */
+.story-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drag {
+  cursor: grab;
+  color: #9aa4b2;
+}
+
+.story-id {
+  color: #00a0b0;
+  font-weight: 500;
+}
+
+.story-title {
+  color: #2e3440;
+}
+
+/* RIGHT SIDE */
+.story-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.story-status {
+  color: #4c566a;
+  cursor: pointer;
+}
+
+.story-points {
+  width: 28px;
+  height: 28px;
+  background: #f0f3f6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.story-menu {
+  cursor: pointer;
+  color: #6b778c;
+}
+
+
+/* ===== SPRINTS SECTION ===== */
+.backlog__sprints {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.backlog__sprints h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2e3440;
+  margin-bottom: 16px;
+}
+
+.sprints-empty {
+  padding: 24px;
+  text-align: center;
+  background: #f7f9fb;
+  border-radius: 6px;
+}
+
+.sprint-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.sprint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sprint-header h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.sprint-dates {
+  font-size: 13px;
+  color: #6b778c;
+}
+
+.sprint-stories {
+  margin: 12px 0;
+  padding: 12px 0;
+  border-top: 1px solid #e6eaef;
+  border-bottom: 1px solid #e6eaef;
+}
+
+.sprint-story-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.sprint-story-link {
+  color: #00a0b0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sprint-story-link:hover {
+  text-decoration: underline;
+}
+
+.sprint-empty-text {
+  color: #6b778c;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px 8px;
+}
+
+.remove-btn:hover {
+  text-decoration: underline;
+}
+
+.sprint-taskboard-btn {
+  margin-top: 12px;
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2e3440;
+}
+
+.sprint-taskboard-btn:hover {
+  background: #d1d5db;
+}
+
+/* When no sprints */
+.empty-text {
+  padding: 18px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Each sprint card */
+.sprint-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 18px 20px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.sprint-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Sprint name */
+.sprint-card strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+/* Dates */
+.sprint-dates {
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 14px;
+}
+
+/* Drop zone */
+.sprint-dropzone {
+  border: 2px dashed #2ec4b6;
+  background: #f8fffd;
+  color: #334155;
+  text-align: center;
+  padding: 22px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+.sprint-dropzone:hover {
+  background: #ecfdf9;
+  border-color: #25a79a;
+}
+
+/* Taskboard button styled like panel button */
+.link {
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #e5e7eb;
+  color: #1f2937;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.link:hover {
+  background: #d1d5db;
+}
+
+
+.story-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.story-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.story-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.story-status,
+.story-points,
+.story-sprint {
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+
